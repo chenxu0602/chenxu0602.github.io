@@ -3,38 +3,227 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chen Xu</title>
+  <title>Chen Xu | Protocol Security Researcher</title>
+  <meta name="description" content="Chen Xu is a protocol security researcher focused on DeFi financial logic, including vault accounting, lending solvency, liquidation, bad debt, fee dilution, and invariant-driven review.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Chen Xu">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:title" content="Chen Xu | Protocol Security Researcher">
+  <meta property="og:description" content="Protocol security research focused on DeFi financial logic, accounting, liquidation, bad debt, and invariant-driven review.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chenxu0602.github.io/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Chen Xu | Protocol Security Researcher">
+  <meta name="twitter:description" content="Protocol security research focused on DeFi financial logic, accounting, liquidation, bad debt, and invariant-driven review.">
+
   <style>
-    body {
-      max-width: 720px;
-      margin: 60px auto;
-      padding: 0 20px;
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #111;
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #5f6368;
+      --line: #e5e7eb;
+      --link: #0969da;
+      --soft: #f8f9fb;
+      --maxw: 760px;
     }
-    h1 { margin-bottom: 8px; }
-    .muted { color: #666; }
-    a { color: #0969da; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    header {
+      margin-bottom: 36px;
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      font-size: 1.03rem;
+    }
+
+    .card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 18px 0 8px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tagline {
+      display: inline-block;
+      margin: 10px 0 16px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      background: #fff;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Chen Xu | Ph.D, CFA </h1>
-  <p class="muted">Protocol Security Researcher</p>
+  <main class="wrap">
+    <header>
+      <h1>Chen Xu</h1>
+      <div class="subtitle">Protocol Security Researcher</div>
+      <div class="tagline">DeFi financial logic • accounting • liquidation • invariant-driven review</div>
 
-  <p>
-    Focused on DeFi financial logic, accounting, liquidation, and invariant-driven review.
-  </p>
+      <p class="intro">
+        I focus on protocol security for DeFi financial systems, with particular interest in
+        vault accounting, lending solvency, liquidation and bad debt, fee dilution, share math,
+        and timing-dependent allocation behavior.
+      </p>
 
-  <h2>Selected Work</h2>
-  <ul>
-    <li><a href="https://github.com/chenxu0602/protocol-security-lab">Protocol Security Lab</a></li>
-    <li><a href="https://github.com/chenxu0602/defi-economic-security-pocs">DeFi Economic Security POCs</a></li>
-  </ul>
+      <p>
+        My work is centered on reviewing how economic value is represented in code:
+        what variables really mean, when accounting diverges from realizable economics,
+        and how protocol state transitions affect user fairness and system safety.
+      </p>
+    </header>
 
-  <h2>Contact</h2>
-  <p>
-    GitHub: <a href="https://github.com/chenxu0602">github.com/chenxu0602</a>
-  </p>
+    <section>
+      <h2>What I Work On</h2>
+      <div class="card">
+        <ul>
+          <li>Vault accounting and ERC-4626-style share logic</li>
+          <li>Lending solvency, liquidation, and bad debt crystallization</li>
+          <li>Fee dilution, share repricing, and protocol accounting transitions</li>
+          <li>Oracle-driven valuation and reported vs realizable value</li>
+          <li>Invariant and scenario-based review for economic security</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <p>
+          <a href="https://github.com/chenxu0602/protocol-security-lab">Protocol Security Lab</a><br>
+          <span class="small">
+            Review notes, threat models, tests, and final writeups for DeFi protocol security practice.
+          </span>
+        </p>
+
+        <p>
+          <a href="https://github.com/chenxu0602">GitHub Profile</a><br>
+          <span class="small">
+            Public repositories, review artifacts, and ongoing protocol security work.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Focus</h2>
+      <p>
+        I am building a body of work around DeFi financial logic review, especially in areas such as:
+      </p>
+      <div class="card">
+        <ul>
+          <li>reported vs realizable value</li>
+          <li>bad debt and loss socialization</li>
+          <li>liquidation fairness and rounding behavior</li>
+          <li>timing as an allocation mechanism</li>
+          <li>economic invariants and test design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        GitHub: <a href="https://github.com/chenxu0602">github.com/chenxu0602</a>
+      </p>
+      <p class="small">
+        This site is a lightweight entry point for my protocol security work and will expand over time.
+      </p>
+    </section>
+
+    <footer>
+      <p>Chen Xu · Protocol Security Researcher</p>
+    </footer>
+  </main>
 </body>
 </html>
