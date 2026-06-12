@@ -3,313 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chen Xu | Protocol Security Researcher</title>
-  <meta name="description" content="Chen Xu is a protocol security researcher focused on DeFi financial logic, including vault accounting, lending solvency, liquidation, bad debt, fee dilution, and invariant-driven review.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Chen Xu">
-  <meta name="theme-color" content="#ffffff">
-
-  <meta property="og:title" content="Chen Xu | Protocol Security Researcher">
-  <meta property="og:description" content="Protocol security research focused on DeFi financial logic, accounting, liquidation, bad debt, and invariant-driven review.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://chenxu0602.github.io/">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Chen Xu | Protocol Security Researcher">
-  <meta name="twitter:description" content="Protocol security research focused on DeFi financial logic, accounting, liquidation, bad debt, and invariant-driven review.">
-  <link rel="canonical" href="https://chenxu0602.github.io/">
-
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #5f6368;
-      --line: #e5e7eb;
-      --link: #0969da;
-      --soft: #f8f9fb;
-      --maxw: 760px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    .wrap {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-
-    header {
-      margin-bottom: 36px;
-    }
-
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 12px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.15rem;
-      margin-top: 36px;
-      padding-top: 20px;
-      border-top: 1px solid var(--line);
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 1rem;
-      margin-bottom: 18px;
-    }
-
-    .intro {
-      font-size: 1.03rem;
-    }
-
-    .card {
-      background: var(--soft);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 16px 18px;
-      margin: 18px 0 8px;
-    }
-
-    .grid {
-      display: grid;
-      gap: 16px;
-      margin-top: 14px;
-    }
-
-    ul {
-      margin: 10px 0 0 20px;
-      padding: 0;
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .tagline {
-      display: inline-block;
-      margin: 10px 0 16px;
-      padding: 6px 10px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      background: #fff;
-    }
-
-    .work-item {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .work-item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .work-item:first-child {
-      padding-top: 0;
-    }
-
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <header>
-      <h1>Chen Xu</h1>
-      <div class="subtitle">Ph.D., CFA · Protocol Security Researcher</div>
-      <div class="tagline">DeFi financial logic • accounting • liquidation • invariant-driven review</div>
-
-      <p class="intro">
-        I focus on protocol security for DeFi financial systems, with particular interest in
-        vault accounting, lending solvency, liquidation and bad debt, fee dilution, share math,
-        and timing-dependent allocation behavior.
-      </p>
-
-      <p>
-        My work is centered on reviewing how economic value is represented in code:
-        what variables really mean, when accounting diverges from realizable economics,
-        and how protocol state transitions affect user fairness and system safety.
-      </p>
-    </header>
-
-    <section>
-      <h2>What I Work On</h2>
-      <div class="card">
-        <ul>
-          <li>Vault accounting and ERC-4626-style share logic</li>
-          <li>Lending solvency, liquidation, and bad debt crystallization</li>
-          <li>Fee dilution, share repricing, and protocol accounting transitions</li>
-          <li>Oracle-driven valuation and reported vs realizable value</li>
-          <li>Invariant and scenario-based review for economic security</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Areas of Interest</h2>
-      <p>
-        I am especially interested in DeFi systems where economic safety depends on how
-        accounting state evolves over time rather than on simple one-step arithmetic correctness.
-      </p>
-      <div class="card">
-        <ul>
-          <li>reported vs realizable value</li>
-          <li>bad debt and loss socialization</li>
-          <li>liquidation fairness and rounding behavior</li>
-          <li>fee minting and dilution</li>
-          <li>low-liquidity accounting distortions</li>
-          <li>economic invariants and protocol state-machine review</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Selected Research / Review Notes</h2>
-      <div class="card">
-        <div class="work-item">
-          <a href="https://github.com/chenxu0602/curve-stableswap-lab">Curve StableSwap Lab</a><br>
-          <span class="small">
-            Security-oriented research artifact on Curve StableSwap and StableSwap NG, covering invariant math, asset semantics, stored rates, rebasing behavior, quote freshness, admin-fee accounting, and a read-only reentrancy / LP oracle manipulation toy reproduction.
-          </span>
-        </div>
-
-        <div class="work-item">
-          <a href="https://github.com/chenxu0602/protocol-security-lab/tree/main">Protocol Security Lab</a><br>
-          <span class="small">
-            Repository of review notes, threat models, tests, and final writeups for DeFi protocol security practice.
-          </span>
-        </div>
-
-        <div class="work-item">
-          <a href="https://github.com/chenxu0602/protocol-security-lab/blob/main/notes/uniswap-v3-review-note.md">Uniswap V3 Review Note</a><br>
-          <span class="small">
-            Notes on concentrated liquidity mechanics, fee attribution, boundary behavior, and position-level accounting logic.
-          </span>
-        </div>
-
-        <div class="work-item">
-          <a href="https://github.com/chenxu0602/protocol-security-lab/blob/main/notes/polymarket-review-note.md">Polymarket Review Note</a><br>
-          <span class="small">
-            Review note on exchange accounting, fee/refund semantics, conditional token identity, and hybrid settlement trust boundaries.
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Selected Work</h2>
-      <div class="grid">
-        <p>
-          <a href="https://github.com/chenxu0602">GitHub Profile</a><br>
-          <span class="small">
-            Public repositories, review artifacts, and ongoing protocol security work.
-          </span>
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Current Focus</h2>
-      <p>
-        I am building a body of work around DeFi financial logic review, especially in areas such as:
-      </p>
-      <div class="card">
-        <ul>
-          <li>reported vs realizable value</li>
-          <li>bad debt and loss socialization</li>
-          <li>liquidation fairness and rounding behavior</li>
-          <li>timing as an allocation mechanism</li>
-          <li>economic invariants and test design</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/chen-xu-phd-cfa-74a83322/">
-          linkedin.com/in/chen-xu-phd-cfa-74a83322
-        </a>
-      </p>
-      <p>
-        Email:
-        <a href="mailto:chen.xu.wq@gmail.com">chen.xu.wq@gmail.com</a>
-      </p>
-      <p>
-        Telegram:
-        <a href="https://t.me/deepthroat_ct">@deepthroat_ct</a>
-      </p>
-      <p>
-        X:
-        <a href="https://x.com/deepthroat_ct">@deepthroat_ct</a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/chenxu0602">github.com/chenxu0602</a>
-      </p>
-      <p class="small">
-        I’m open to conversations around protocol security, DeFi financial logic review, and scoped pre-audit work.
-      </p>
-    </section>
-
-    <footer>
-      <p>Chen Xu · Protocol Security Researcher</p>
-    </footer>
-  </main>
-</body>
-</html>
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chen Xu | Commodity Transmission &amp; Equity Relative Value</title>
   <meta name="description" content="Chen Xu — quantitative researcher focused on commodity-to-equity price transmission, cross-asset relative value, and macro-driven equity factor research.">
   <meta name="robots" content="index, follow">
@@ -399,16 +92,16 @@
     .pill-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 7px;
       margin-top: 12px;
     }
 
     .pill {
       display: inline-block;
-      padding: 5px 12px;
+      padding: 4px 11px;
       border: 1px solid var(--line);
       border-radius: 6px;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       color: var(--muted);
       background: #fff;
     }
@@ -458,11 +151,10 @@
       <div class="title-line">Ph.D., CFA · Quantitative Researcher</div>
 
       <p class="intro">
-        I research commodity-to-equity price transmission mechanisms and cross-asset
-        relative value strategies. My work centers on understanding how commodity
-        price signals propagate through supply chains into equity valuations, and
-        how to express macro views through disciplined relative-value positioning
-        across commodity-exposed equity sectors.
+        I research commodity-to-equity price transmission and cross-asset relative
+        value. My work focuses on how commodity price signals propagate through supply
+        chains into equity valuations, and how to express macro views through
+        disciplined long/short positioning across commodity-exposed equity sectors.
       </p>
     </header>
 
@@ -481,11 +173,11 @@
     </section>
 
     <section>
-      <h2>Research Engine</h2>
+      <h2>Research Platform</h2>
       <p class="intro">
-        I maintain a daily-frequency, multi-asset quantitative research platform
-        that covers equities, commodities, macro factors, and cross-asset
-        relationships. The pipeline runs deterministic, rule-based research:
+        I maintain a daily-frequency, multi-asset quantitative research engine
+        covering equities, commodities, macro factors, and cross-asset
+        relationships. The pipeline runs deterministic, rule-based analysis:
         signal evaluation, instrument backtests, relative-strength dashboards,
         regime summaries, and portfolio construction diagnostics.
       </p>
